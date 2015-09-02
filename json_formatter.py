@@ -1,12 +1,14 @@
 import sys
 import json
-import sys
 
 try:
 	if sys.argv[1] == 'help':
 		print '*** JSON Formatter HELP ***'
-		print "* Pass in a JSON file location as the first argument.  This is the file that will be pretty printed"
-		print '* Pass in a second argument with a file name to be written to. If no second argument is present, it will just print to the screen.'
+		print "** Usage:"
+		print '> python json_formatter.py foo.json bar.json'
+		print '* This will the file foo.json and output it pretty-printed to bar.json'
+		print '* Or you can leave out the second argument and just output to stdout'
+		print '> python json_formatter.py foo.json'
 	else:
 		f = open (sys.argv[1], 'r')
 		j = json.loads(f.read())
