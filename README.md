@@ -7,6 +7,6 @@ Usage:
 
 This will read the file foo.json and output it pretty printed to bar.json
 
-Or you can just dump the out put to the terminal by leaving off the second argument
+Or you can just dump the output to the terminal by leaving off the second argument
 
 > python json_formatter.py foo.json
